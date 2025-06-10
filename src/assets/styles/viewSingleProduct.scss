@@ -1,0 +1,146 @@
+#viewSingleProductSection {
+    position: relative;
+    top: 100px;
+    height: 80vh !important;
+    z-index: 0 !important;
+
+    #viewSingleProductDiv {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        #mainOne {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-image: url(https://res.cloudinary.com/dwrmvf3pr/image/upload/v1725642316/bg_c2sdjr.jpg);
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+
+            #viewCoverDiv {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                #test2 {
+                    width: 80%;
+                    height: fit-content;
+
+                    #viewSingleProductImageDiv {
+                        width: 100%;
+                        height: fit-content;
+                        border-radius: 20px;
+
+                        #viewSingleProductImage {
+                            width: 80% !important;
+                            height: 60% !important;
+                            box-shadow: 0px 0px 10px 5px grey;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #mainTwo {
+            width: 60%;
+            overflow-y: scroll;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 1000;
+
+            #productDesc {
+                width: 90%;
+                box-shadow: 0px 0px 10px 5px grey;
+                border-radius: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+
+                h5,
+                p {
+                    width: 48%;
+                }
+            }
+
+            // top: 200px;
+            #viewSingleProductPriceDiv {
+                width: 90%;
+                box-shadow: 0px 0px 10px 5px grey;
+                border-radius: 0px;
+                margin-bottom: 10px;
+
+                // padding: 20px;
+                h5 {
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+            }
+
+            #viewSingleProductSizeDiv,
+            #viewSingleProductColorDiv,
+            #viewSingleProductSleeveLengthDiv {
+                width: 90%;
+                box-shadow: 0px 0px 10px 5px grey;
+                border-radius: 0px;
+                margin-bottom: 10px;
+
+                h5 {
+                    text-align: center;
+                }
+
+                #viewSingleProductSize,
+                #viewSingleProductColor,
+                #viewSingleProductSleeveLength {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin-bottom: 20px;
+                }
+            }
+
+            #buttonDiv {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                margin-top: 10px;
+
+                button {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    #viewSingleProductDiv{
+        flex-direction: column;
+        #mainOne, #mainTwo{
+            width: 100% !important;
+        }
+    }
+
+    #priceDiv{
+    flex-direction: column !important;
+    }
+}

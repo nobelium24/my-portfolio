@@ -1,0 +1,150 @@
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 20px;
+    position: relative;
+    top: 70px;
+}
+
+#checkoutSection {
+    position: relative !important;
+    top: 100px !important;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white ;
+
+    #checkoutSectionDivOne {
+        width: 55%;
+        height: fit-content;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        margin-right: 20px;
+        box-shadow: 0px 0px 10px 0px #000000;
+        background-color: lightgray;
+
+        #inputDiv {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            div {
+                width: 50%;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 20px;
+
+                #checkoutInputs {
+                    width: 100% !important;
+                    height: 45px;
+                    // margin-bottom: 18px;
+                    border: 1px solid black;
+                    background-color: transparent;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    #checkoutSectionDivTwo {
+        width: 35%;
+        height: 80%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-left: 20px;
+        box-shadow: 0px 0px 10px 0px #000000;
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+#submitButton {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#checkoutInputs::placeholder {
+    color: black !important;
+    padding-left: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    background-color: silver;
+    // border-radius: 10px;
+
+}
+
+@media (max-width: 800px) {
+    #checkoutSection{
+        height: fit-content !important;
+    }
+    #cover {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: fit-content !important;
+
+        #checkoutSectionDivOne {
+            width: 80% !important;
+            height: fit-content !important;
+            // border: none !important;
+            margin: 0 !important;
+
+            #inputDiv {
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+
+                div {
+                    width: 100% !important;
+
+                    #checkoutInputs {
+                        height: 35px;
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        border: 1px solid black;
+                        background-color: transparent;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+        #checkoutSectionDivTwo {
+            width: 90% !important;
+            height: fit-content !important;
+        }
+    }
+
+}
+
+#cover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.664);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+#loadingSection {
+    width: 100%;
+    height: 100vh;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+    background: url(https://res.cloudinary.com/dwrmvf3pr/image/upload/v1725642316/bg_c2sdjr.jpg);
+
+    div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.664);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // img{
+        //     width: 30% !important;
+        //     height: 30% !important;
+        // }
+    }
+}

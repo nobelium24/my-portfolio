@@ -1,0 +1,136 @@
+#signUpSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #signUpDivOne {
+        width: 60%;
+        height: 100%;
+        background-image: url(https://res.cloudinary.com/dwrmvf3pr/image/upload/v1725642316/bg_c2sdjr.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        #coverDiv {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.664);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #signUpCard {
+                width: 70%;
+                height: 90%;
+                border-radius: 0px;
+                box-shadow: 0px 0px 10px 0px #000000;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    #signUpDivTwo {
+        background-color: black;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../../public/simple\ kaftan\ char.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+#signUpForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    div {
+        width: 100% !important;
+
+        #adminSignUpInputs {
+            width: 97%;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            padding-left: 20px;
+        }
+
+        #signUpVisibility, #loginVisibility {
+            position: absolute;
+            z-index: 1000;
+            left: 90%;
+            top: 28%;
+        }
+    }
+
+}
+
+#signUpButton {
+    padding: 10px 25px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+}
+
+
+input:-ms-input-placeholder {
+    color: black;
+}
+
+
+input::-ms-input-placeholder {
+    color: black;
+}
+
+
+input::-moz-placeholder {
+    color: black;
+    opacity: 1;
+}
+
+@media(max-width:800px){
+    #signUpDivOne{
+        width: 100% !important;
+    }
+    #signUpDivTwo{
+        display: none !important;
+    }
+
+    #signUpCard{
+        width: 80% !important;
+        height: fit-content !important;
+    }
+
+    #signUpVisibility{
+        left: 75% !important;
+        top: 69% !important;
+    }
+
+    #loginVisibility{
+        left: 85% !important;
+        top: 52% !important;
+    }
+}

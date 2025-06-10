@@ -1,0 +1,386 @@
+#landingPageNav {
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10 !important;
+
+    #navDivOne {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navDivTwo {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            width: 80%;
+            height: 50%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                width: 87%;
+                height: 100%;
+            }
+
+            div {
+                width: 13%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+            }
+        }
+    }
+
+    #navDivThree {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        div {
+
+            #navButtonOne,
+            #navButtonTwo,
+            #navButtonThree,
+            #navButtonOneAdmin,
+            #navButtonTwoAdmin {
+                padding: 7px;
+                color: black !important;
+                width: fit-content;
+                height: fit-content;
+                background-color: transparent !important;
+                border-radius: 100%;
+            }
+
+            #toolTipOne,
+            #toolTipTwo,
+            #toolTipThree,
+            #toolTipOneAdmin,
+            #toolTipTwoAdmin {
+                display: none;
+                background-color: black;
+                color: white;
+                width: fit-content;
+                min-width: fit-content;
+            }
+        }
+    }
+
+}
+
+#navButtonOne:hover+#toolTipOne {
+    display: block !important;
+    position: absolute;
+    top: 73px;
+    left: 73.5%;
+    z-index: 1;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+    transition: 0.5s;
+}
+
+#navButtonTwo:hover+#toolTipTwo {
+    display: block !important;
+    position: absolute;
+    top: 73px;
+    left: 82.7%;
+    z-index: 1;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+    transition: 0.5s;
+}
+
+#navButtonThree:hover+#toolTipThree {
+    display: block !important;
+    position: absolute;
+    top: 50px;
+    left: 20% !important;
+    height: fit-content;
+    z-index: 1;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+    transition: 0.5s;
+}
+
+#navButtonOneAdmin:hover+#toolTipOneAdmin {
+    display: block !important;
+    position: absolute;
+    top: 73px;
+    left: 75%;
+    z-index: 1;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+    transition: 0.5s;
+}
+
+#navButtonTwoAdmin:hover+#toolTipTwoAdmin {
+    display: block !important;
+    position: absolute;
+    top: 73px;
+    left: 89.2%;
+    z-index: 1;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+    transition: 0.5s;
+}
+
+#logoImg {
+    // background-color: transparent;
+    // background: transparent;
+    background-size: contain;
+    background-position: center;
+    mix-blend-mode: darken;
+    float: left;
+    width: 8%;
+    height: 40%;
+    // background-image: url(../../../public/bg.jpg);
+}
+
+#responsivePageNav {
+    display: none;
+}
+
+#responsivePageNavAdmin {
+    display: none;
+}
+
+@media (max-width:800px) {
+    #landingPageNav {
+        display: none !important;
+    }
+
+    #responsivePageNav {
+        width: 100%;
+        height: 80px;
+        background-color: lightgray;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+
+        #responsivePageDivOne {
+            width: 75%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            #middleDiv{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin-left: 100px;
+                    height: 30%;
+                    width: 10%;
+                }
+            }
+
+            div {
+                width: 70%;
+                height: 40%;
+                display: flex;
+
+                input {
+                    width: 80%;
+                    height: 100%;
+                }
+
+                div {
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: black;
+                }
+            }
+        }
+
+        #responsivePageDivTwo {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media (max-width:800px) {
+    #landingPageNav {
+        display: none !important;
+    }
+
+    #searchDiv{
+        height: 100% !important;
+        width: fit-content !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top:5px !important;
+    }
+
+    #responsivePageNavAdmin {
+        display: flex;
+        background-color: lightgray;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        width: 100% !important;
+
+        #responsivePageDivOneAdmin {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            div {
+                width: 70%;
+                height: 40%;
+                display: flex;
+
+                input {
+                    width: 80%;
+                    height: 100%;
+                }
+
+                div {
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: black;
+                }
+            }
+        }
+
+        #responsivePageDivTwoAdmin {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                #navButtonOneAdmin,
+                #navButtonTwoAdmin {
+                    padding: 7px;
+                    color: black !important;
+                    width: fit-content;
+                    height: fit-content;
+                    background-color: transparent !important;
+                    border-radius: 100%;
+                }
+
+                #toolTipOneAdmin,
+                #toolTipTwoAdmin {
+                    display: none;
+                    background-color: black;
+                    color: white;
+                    width: fit-content;
+                    min-width: fit-content;
+                }
+            }
+        }
+    }
+}
+
+
+
+#queryDiv, #queryDivRes{
+    position: absolute;
+    height: fit-content !important;
+    width: 40% !important;
+    top: 80px;
+    display: flex;
+    flex-direction: column !important;
+    z-index: 5 !important;
+    background-color: white !important;
+    #cancelQueryDiv, #cancelQueryDivRes{
+        background-color: black !important;
+        border: none !important;
+        position: relative !important;
+        left: 94.5% !important;
+        top: 15% !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    div{
+        width: 100% !important;
+        background-color: white !important;
+        text-align: start !important;
+        border: none !important;
+    }
+}
+
+@media (max-width:800px) {
+    #queryDiv, #queryDivRes{
+        width: 100% !important;
+        #cancelQueryDiv, #cancelQueryDivRes{
+            left: 92% !important;
+            top: 15% !important;
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+    
+}
+
+
+#cartDiv{
+    // background-color: green;
+    position: relative;
+    p{
+        position:absolute ;
+        top: 10%;
+        left: 60%;
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        color: white;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: smaller;
+        font-weight: lighter;
+    }
+}
+
+#cartButton{
+    background-color: transparent !important;
+    border: none !important;
+    color: black !important;
+    padding: 7px;
+    border-radius: 100%;
+}

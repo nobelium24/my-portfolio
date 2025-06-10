@@ -1,0 +1,123 @@
+#productResultSection {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+
+    #queryImageDiv {
+        width: 40%;
+    }
+
+    #queryDetailsDiv {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#priceDiv {
+    flex-direction: column;
+}
+
+// #colorP {
+//     margin-right: "20px" !important;
+//     width: "20px" !important;
+//     height: "20px" !important;
+//     border-radius: "50%" !important;
+// }
+
+#colorTooltip {
+    display: none !important;
+    background-color: black !important;
+    color: white !important;
+    width: fit-content !important;
+    min-width: fit-content !important;
+}
+
+
+#colorP:hover + #colorTooltip {
+    display: block !important;
+    position: relative !important;
+    left: 40% !important;
+}
+
+
+
+#loaderDiv {
+    position: relative;
+    height: 100vh;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#queryNotFoundSection{
+    position: relative;
+    top: 100px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 40%;
+        height: 40%;
+    }
+    div{
+        width: 50%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+#categoryResultSection{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    div{
+        width: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#categoryResultSection > div:nth-child(2n){
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    justify-content: center;
+    height: fit-content;
+    flex-direction: column;
+}
+
+
+@media (max-width:800px) {
+    #productResultSection {
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #queryImageDiv {
+        width: 100% !important;
+    }
+
+    #queryDetailsDiv {
+        width: 100% !important;
+    }
+
+}

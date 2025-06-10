@@ -1,0 +1,198 @@
+#sectionOne {
+    display: flex;
+    height: 650px;
+    position: relative !important;
+    top: 150px !important;
+    background-color: white;
+    width: 100% !important;
+
+    #divOne {
+        width: 50% !important;
+        height: inherit !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+
+    #divTwo {
+        width: 50% !important;
+        height: inherit !important;
+    }
+}
+
+#test {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    #testDiv {
+        width: 100%;
+        height: 120% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        // margin: 20px;
+
+        #testImg {
+            // width: 70%;
+            // height: 650px;
+            // box-shadow: 0px 0px 10px 5px grey;
+        }
+    }
+}
+
+#buyNow {
+    background-color: lightgrey !important;
+    padding: 1% 5% !important;
+    margin-top: 50px !important;
+    color: black !important;
+    font-size: 25px;
+    font-weight: 5px;
+    // box-shadow: 0px 0px 10px 5px grey;
+}
+
+@media (max-width:800px) {
+    #sectionOne {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: 650px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        top: 20px !important;
+
+        #divOne,
+        #divTwo {
+            width: 100% !important;
+            height: 300px !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        #divOne {
+            top: 200px !important;
+            position: relative !important;
+            padding-left: 10px !important;
+        }
+
+        // #test {
+        //     height: 500px !important;
+        //     width: 100%;
+        //     margin: 0 !important;
+        //     padding: 0 !important;
+
+        //     #testDiv {
+        //         padding: 0 !important;
+        //         margin: 0 !important;
+
+        //         div{
+        //             margin: 0 !important;
+        //             padding: 0 !important;
+        //             height: 400px !important;
+        //             #testImg {
+        //                 height: 250px !important;
+        //                 width: 100% !important;
+        //                 padding: 0 !important;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+
+
+
+#sectionTwo {
+    width: 60%;
+    height: fit-content;
+    min-height: 400px;
+    background-color: lightgray;
+    position: relative;
+    top: 190px;
+    margin-bottom: 200px;
+
+    #displayCategories {
+        width: 100%;
+        height: fit-content;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        #displayCategoryHomePage {
+            width: 40%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px 40px;
+            // border-radius: 10px;
+            // border: 1px solid black;
+            box-shadow: 0px 0px 10px 5px grey;
+            margin-bottom: 50px;
+
+            div {
+                width: 100%;
+                margin-top: 10px;
+
+                p {
+                    text-align: start;
+                    width: 100%;
+                    font-size: 17px;
+                    line-height: 12px;
+                }
+            }
+
+            #homeImg {
+                width: 100% !important;
+                height: 50% !important;
+            }
+
+            #viewCategoryButton {
+                background-color: black;
+                color: white;
+                width: 100%;
+                border: none;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:800px) {
+    #sectionTwo {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        flex-direction: column !important;
+        margin-bottom: 200px !important;
+
+        #displayCategories {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 !important;
+            width: 90% !important;
+            margin: 0 !important;
+
+            #displayCategoryHomePage {
+                width: 90% !important;
+                height: 450px !important;
+                margin-bottom: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
