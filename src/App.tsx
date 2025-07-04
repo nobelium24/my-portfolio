@@ -124,8 +124,8 @@ const App = () => {
         <Section id="about" title="Professional Summary">
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700">
-              Dedicated and innovative Fullstack Developer with a passion for creating cutting-edge user experiences.
-              Skilled in crafting responsive interfaces, implementing innovative solutions, and ensuring optimal
+              Ogunba Joseph Adewole is a dedicated and innovative Fullstack Developer with a passion for creating 
+              cutting-edge user experiences. Skilled in crafting responsive interfaces, implementing innovative solutions, and ensuring optimal
               application performance through thorough testing and debugging. Proficient in utilizing a range of
               technologies, including C#, ASP.NET, and various database operations, in building APIs. Excels in
               JavaScript/Typescript frameworks such as React.JS, Angular J.S, and Node. JS. Committed to staying
