@@ -89,7 +89,7 @@ const App = () => {
       description: "Building APIs for a gym management tool using Go, Gin, Postgres."
     },
     {
-      title: "Creciment Tech",
+      title: "Chidori",
       role: "Back-end developer",
       period: "January 2025 – Present",
       description: "Built APIs for a delivery platform using Node.JS, Express, Typesript, Postgres."
