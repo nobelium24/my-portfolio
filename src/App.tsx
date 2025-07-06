@@ -83,13 +83,13 @@ const App = () => {
       description: "Built APIs for an AI educational tool using Node.JS, Typeescript, Postgres."
     },
     {
-      title: "Nibble",
-      role: "Back-end developer",
+      title: "Fiyifit",
+      role: "Fullstack developer",
       period: "January 2025 – Present",
       description: "Building APIs for a gym management tool using Go, Gin, Postgres."
     },
     {
-      title: "Creciment Tech",
+      title: "Chidori",
       role: "Back-end developer",
       period: "January 2025 – Present",
       description: "Built APIs for a delivery platform using Node.JS, Express, Typesript, Postgres."
