@@ -92,7 +92,13 @@ const App = () => {
       title: "Creciment Tech",
       role: "Back-end developer",
       period: "January 2025 – Present",
-      description: "Building APIs for a delivery platform using Node.JS, Express, Typesript, Postgres."
+      description: "Built APIs for a delivery platform using Node.JS, Express, Typesript, Postgres."
+    },
+    {
+      title: "LSACA",
+      role: "Back-end developer",
+      period: "January 2025 – Present",
+      description: "Building APIs for Lagos State Aids Control Agency using Node.JS, Express, Typesript, Postgres."
     }
   ]
 
@@ -124,7 +130,7 @@ const App = () => {
         <Section id="about" title="Professional Summary">
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700">
-              Ogunba Joseph Adewole is a dedicated and innovative Fullstack Developer with a passion for creating 
+              Ogunba Joseph Adewole is a dedicated and innovative Fullstack Developer with a passion for creating
               cutting-edge user experiences. Skilled in crafting responsive interfaces, implementing innovative solutions, and ensuring optimal
               application performance through thorough testing and debugging. Proficient in utilizing a range of
               technologies, including C#, ASP.NET, and various database operations, in building APIs. Excels in
