@@ -97,7 +97,7 @@ const App = () => {
     {
       title: "LSACA",
       role: "Back-end developer",
-      period: "January 2025 – Present",
+      period: "January 2025 – June 2025",
       description: "Building APIs for Lagos State Aids Control Agency using Node.JS, Express, Typesript, Postgres."
     }
   ]
