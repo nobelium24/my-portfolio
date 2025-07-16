@@ -1,7 +1,7 @@
 import { ExperienceCardProps } from "../types"
 
 
-const ExperienceCard = ({ title, company, period, bullets }: ExperienceCardProps) => {
+const ExperienceCard = ({ title, company, period, bullets, link }: ExperienceCardProps) => {
     return (
         <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
             <div className="flex justify-between items-start">
@@ -21,8 +21,20 @@ const ExperienceCard = ({ title, company, period, bullets }: ExperienceCardProps
                     </li>
                 ))}
             </ul>
+
+            {link && link.startsWith("http") && (
+                <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-xl text-sm hover:bg-blue-700 transition"
+                >
+                    View published App ↗
+                </a>
+            )}
         </div>
     )
 }
+
 
 export default ExperienceCard

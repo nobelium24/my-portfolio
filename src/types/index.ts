@@ -3,7 +3,9 @@ export interface ExperienceCardProps {
     company: string
     period: string
     bullets: string[]
+    link?: string
 }
+
 
 export type ProjectCardProps = {
     title: string;

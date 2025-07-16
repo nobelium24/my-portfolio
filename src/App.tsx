@@ -15,7 +15,8 @@ const App = () => {
       bullets: [
         "Built and managed Restful APIs for mobility, ride hailing and car pooling applications using Node.JS, Typescript, MongoDB",
         "Documented application workflow, technical processes, and system architecture"
-      ]
+      ],
+      link: "https://apps.apple.com/ng/app/zeno-affordable-ride/id6746136829",
     },
     {
       title: "Instructor",
