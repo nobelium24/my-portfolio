@@ -10,6 +10,7 @@ export type ProjectCardProps = {
     role: string;
     period: string;
     description: string;
+    link?: string;
 };
 
 export type SectionProps = {

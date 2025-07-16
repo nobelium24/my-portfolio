@@ -9,24 +9,12 @@ import { Skill } from './types'
 const App = () => {
   const experiences = [
     {
-      title: "Intern",
-      company: "SQI College of ICT, Ogbomosho, Oyo State",
-      period: "Aug 2022 - May 2023",
+      title: "Back-end developer/Technical writer",
+      company: "Zenolynk",
+      period: "August 2024 - July 2025",
       bullets: [
-        "Facilitated lessons for over 50 beginner web development students, teaching HTML, CSS, JavaScript, and Node.JS",
-        "Built rapport with course participants resulting in a re-enrollment rate of 75% for subsequent classes",
-        "Trained over 50 interns on industry-standard user experience processes & protocols"
-      ]
-    },
-    {
-      title: "Front-end Developer (Contract)",
-      company: "WootLab – Remote",
-      period: "Nov 2023 - Jan 2024",
-      bullets: [
-        "Collaborated with cross-functional teams to design and develop a cutting-edge utility app",
-        "Created, tested, and optimized responsive interfaces focusing on enhancing functionality",
-        "Implemented innovative front-end solutions improving the app's visual appeal and usability",
-        "Maintained a 95% code quality standard through thorough testing and debugging"
+        "Built and managed Restful APIs for mobility, ride hailing and car pooling applications using Node.JS, Typescript, MongoDB",
+        "Documented application workflow, technical processes, and system architecture"
       ]
     },
     {
@@ -41,14 +29,26 @@ const App = () => {
       ]
     },
     {
-      title: "Back-end developer/Technical writer",
-      company: "Zenolynk",
-      period: "August 2024 - Present",
+      title: "Front-end Developer (Contract)",
+      company: "WootLab – Remote",
+      period: "Nov 2023 - Jan 2024",
       bullets: [
-        "Building and managing Restful APIs for mobility applications using Node.JS, Typescript, MongoDB",
-        "Documenting application workflow, technical processes, and system architecture"
+        "Collaborated with cross-functional teams to design and develop a cutting-edge utility app",
+        "Created, tested, and optimized responsive interfaces focusing on enhancing functionality",
+        "Implemented innovative front-end solutions improving the app's visual appeal and usability",
+        "Maintained a 95% code quality standard through thorough testing and debugging"
       ]
-    }
+    },
+    {
+      title: "Intern",
+      company: "SQI College of ICT, Ogbomosho, Oyo State",
+      period: "Aug 2022 - May 2023",
+      bullets: [
+        "Facilitated lessons for over 50 beginner web development students, teaching HTML, CSS, JavaScript, and Node.JS",
+        "Built rapport with course participants resulting in a re-enrollment rate of 75% for subsequent classes",
+        "Trained over 50 interns on industry-standard user experience processes & protocols"
+      ]
+    },
   ]
 
   const projects = [
@@ -56,49 +56,56 @@ const App = () => {
       title: "KIK Perfumes",
       role: "Full-stack developer",
       period: "February 2023 - April 2023",
-      description: "Crafted an e-commerce application with Next.JS, Node.JS, MongoDB, and Express.JS, concentrating on replicating UI/UX."
+      description: "Crafted an e-commerce application with Next.JS, Node.JS, MongoDB, and Express.JS, concentrating on replicating UI/UX.",
+      link: "https://www.kikperfume.com/"
     },
-    {
-      title: "TimeShoppy",
-      role: "Back-end developer",
-      period: "May 2023 - August 2023",
-      description: "Built and managed Restful APIs using Node.JS, emphasizing robust and secure endpoints to support diverse client applications."
-    },
+    // {
+    //   title: "TimeShoppy",
+    //   role: "Back-end developer",
+    //   period: "May 2023 - August 2023",
+    //   description: "Built and managed Restful APIs using Node.JS, emphasizing robust and secure endpoints to support diverse client applications."
+    // },
     {
       title: "Gleam Perfumes",
       role: "Back-end developer",
       period: "March 2024 – August 2024",
-      description: "Built and managed secure Restful APIs using Node.JS, Typescript, MongoDB for diverse client applications."
+      description: "Built and managed secure Restful APIs using Node.JS, Typescript, MongoDB for diverse client applications.",
+      link: "https://www.gleam.global/"
     },
     {
       title: "Flurrypay",
       role: "Back-end developer",
       period: "March 2024 - December 2024",
-      description: "Built APIs for a financial and crypto application using Node.JS, Typeescript, Postgres."
+      description: "Built APIs for a financial and crypto application using Node.JS, Typeescript, Postgres.",
+      link: "https://flurrypay.io/"
     },
     {
       title: "Cedarbyte Technologies",
       role: "Back-end developer",
       period: "August 2024 – January 2025",
-      description: "Built APIs for an AI educational tool using Node.JS, Typeescript, Postgres."
+      description: "Built APIs for an AI educational tool using Node.JS, Typeescript, Postgres.",
+      link: "testing"
     },
     {
       title: "Fiyifit",
       role: "Fullstack developer",
       period: "January 2025 – Present",
-      description: "Building APIs for a gym management tool using Go, Gin, Postgres."
+      description: "Building APIs for a gym management tool using Go, Gin, Postgres.",
+      link: "in-progress"
     },
     {
       title: "Chidori",
       role: "Back-end developer",
       period: "January 2025 – Present",
-      description: "Built APIs for a delivery platform using Node.JS, Express, Typesript, Postgres."
+      description: "Built APIs for a delivery platform using Node.JS, Express, Typesript, Postgres.",
+      link: "https://apps.apple.com/app/chidori-package-delivery/id6747782664"
     },
     {
       title: "LSACA",
       role: "Back-end developer",
-      period: "January 2025 – June 2025",
-      description: "Building APIs for Lagos State Aids Control Agency using Node.JS, Express, Typesript, Postgres."
+      period: "April 2025 – June 2025",
+      description: "Building APIs for Lagos State Aids Control Agency using Node.JS, Express, Typesript, Postgres.",
+      link: "https://uat-lasaca.mydeslynkpartners.com/"
     }
   ]
 
