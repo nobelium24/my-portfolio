@@ -9,7 +9,7 @@ const ExperienceCard = ({ title, company, period, bullets, link }: ExperienceCar
                     <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
                     <p className="text-secondary font-medium">{company}</p>
                 </div>
-                <span className="bg-primary text-white px-3 py-1 rounded-full text-sm">
+                <span className="bg-primary text-white px-3 py-1 rounded-full text-sm w-fit">
                     {period}
                 </span>
             </div>

@@ -70,35 +70,35 @@ const App = () => {
       title: "Gleam Perfumes",
       role: "Back-end developer",
       period: "March 2024 – August 2024",
-      description: "Built and managed secure Restful APIs using Node.JS, Typescript, MongoDB for diverse client applications.",
+      description: "Responsible for building and managing secure Restful APIs using Node.JS, Typescript, MongoDB, emphasizing robust and secure endpoints to support diverse client applications.",
       link: "https://www.gleam.global/"
     },
     {
       title: "Flurrypay",
       role: "Back-end developer",
       period: "March 2024 - December 2024",
-      description: "Built APIs for a financial and crypto application using Node.JS, Typeescript, Postgres.",
+      description: "Responsible for building and managing Restful APIs for a financial and crypto application using Node.JS, Typeescript, Postgres, emphasizingrobust andsecure endpoints to support diverse client web and mobile application",
       link: "https://flurrypay.io/"
     },
     {
       title: "Cedarbyte Technologies",
       role: "Back-end developer",
       period: "August 2024 – January 2025",
-      description: "Built APIs for an AI educational tool using Node.JS, Typeescript, Postgres.",
+      description: "Responsible for building and managing Restful APIs for an AI educational tool using Node.JS, Typeescript, Postgres, emphasizing robust and secure endpoints to support diverse client web applications.",
       link: "testing"
     },
     {
       title: "Fiyifit",
       role: "Fullstack developer",
       period: "January 2025 – Present",
-      description: "Building APIs for a gym management tool using Go, Gin, Postgres.",
+      description: "Responsible for building and managing Restful APIs for a gym management tool using Go, Gin, Postgres, emphasizing robust and secure endpoints to support diverse client web and mobile applications",
       link: "in-progress"
     },
     {
       title: "Chidori",
       role: "Back-end developer",
       period: "January 2025 – Present",
-      description: "Built APIs for a delivery platform using Node.JS, Express, Typesript, Postgres.",
+      description: "Responsible for building and managing Restful APIs for a logistics and delivery platform using Node.JS, Typescript, Postgres, emphasizing robust and secure endpoints to support diverse client web and mobile applications.",
       link: "https://apps.apple.com/app/chidori-package-delivery/id6747782664"
     },
     {
