@@ -34,7 +34,7 @@ const App = () => {
       company: "WootLab – Remote",
       period: "Nov 2023 - Jan 2024",
       bullets: [
-        "Collaborated with cross-functional teams to design and develop a cutting-edge utility app",
+        "Collaborated with cross-functional teams to design and develop a cutting-edge utility app with react.js",
         "Created, tested, and optimized responsive interfaces focusing on enhancing functionality",
         "Implemented innovative front-end solutions improving the app's visual appeal and usability",
         "Maintained a 95% code quality standard through thorough testing and debugging"
@@ -55,60 +55,69 @@ const App = () => {
   const projects = [
     {
       title: "KIK Perfumes",
-      role: "Full-stack developer",
-      period: "February 2023 - April 2023",
-      description: "Crafted an e-commerce application with Next.JS, Node.JS, MongoDB, and Express.JS, concentrating on replicating UI/UX.",
-      link: "https://www.kikperfume.com/"
+      role: "Full-stack Developer",
+      period: "February 2023 – April 2023",
+      description:
+        "Developed a fully functional e-commerce platform using Next.js, Node.js, Express.js, and MongoDB. Focused on replicating pixel-perfect UI/UX from design files while ensuring scalable and maintainable architecture.",
+      link: "https://www.kikperfume.com/",
     },
     // {
     //   title: "TimeShoppy",
-    //   role: "Back-end developer",
-    //   period: "May 2023 - August 2023",
-    //   description: "Built and managed Restful APIs using Node.JS, emphasizing robust and secure endpoints to support diverse client applications."
+    //   role: "Back-end Developer",
+    //   period: "May 2023 – August 2023",
+    //   description:
+    //     "Built and maintained RESTful APIs using Node.js, Express.js, and MongoDB to support e-commerce functionalities including product catalog, user authentication, and order management.",
     // },
     {
       title: "Gleam Perfumes",
-      role: "Back-end developer",
+      role: "Back-end Developer",
       period: "March 2024 – August 2024",
-      description: "Responsible for building and managing secure Restful APIs using Node.JS, Typescript, MongoDB, emphasizing robust and secure endpoints to support diverse client applications.",
-      link: "https://www.gleam.global/"
+      description:
+        "Designed and implemented RESTful APIs using Node.js, TypeScript, and MongoDB to manage inventory, customer orders, and payment processing for a luxury perfume brand.",
+      link: "https://www.gleam.global/",
     },
     {
       title: "Flurrypay",
-      role: "Back-end developer",
-      period: "March 2024 - December 2024",
-      description: "Responsible for building and managing Restful APIs for a financial and crypto application using Node.JS, Typeescript, Postgres, emphasizingrobust andsecure endpoints to support diverse client web and mobile application",
-      link: "https://flurrypay.io/"
+      role: "Back-end Developer",
+      period: "March 2024 – December 2024",
+      description:
+        "Engineered secure and scalable RESTful APIs using Node.js, TypeScript, Express, and PostgreSQL for a fintech application supporting fiat and cryptocurrency transactions. Integrated payment logic, KYC flows, and role-based access control.",
+      link: "https://flurrypay.io/",
     },
     {
       title: "Cedarbyte Technologies",
-      role: "Back-end developer",
+      role: "Back-end Developer",
       period: "August 2024 – January 2025",
-      description: "Responsible for building and managing Restful APIs for an AI educational tool using Node.JS, Typeescript, Postgres, emphasizing robust and secure endpoints to support diverse client web applications.",
-      link: "testing"
+      description:
+        "Built high-performance APIs using Node.js, TypeScript, Express, PostgreSQL, and Redis to power an AI-driven education platform. Focused on user analytics, adaptive learning modules, and content delivery.",
+      link: "testing",
     },
     {
       title: "Fiyifit",
-      role: "Fullstack developer",
+      role: "Full-stack Developer",
       period: "January 2025 – Present",
-      description: "Responsible for building and managing Restful APIs for a gym management tool using Go, Gin, Postgres, emphasizing robust and secure endpoints to support diverse client web and mobile applications",
-      link: "in-progress"
+      description:
+        "Spearheading the development of a gym management platform using Go (Gin), PostgreSQL, and TypeScript. Responsible for core features including member subscriptions, scheduling, and real-time notifications.",
+      link: "in-progress",
     },
     {
       title: "Chidori",
-      role: "Back-end developer",
+      role: "Back-end Developer",
       period: "January 2025 – Present",
-      description: "Responsible for building and managing Restful APIs for a logistics and delivery platform using Node.JS, Typescript, Postgres, emphasizing robust and secure endpoints to support diverse client web and mobile applications.",
-      link: "https://apps.apple.com/app/chidori-package-delivery/id6747782664"
+      description:
+        "Developed and maintained mission-critical APIs for a logistics and delivery platform using Node.js, TypeScript, and PostgreSQL. Enabled real-time package tracking, delivery assignment, and driver management.",
+      link: "https://apps.apple.com/app/chidori-package-delivery/id6747782664",
     },
     {
       title: "LSACA",
-      role: "Back-end developer",
+      role: "Back-end Developer",
       period: "April 2025 – June 2025",
-      description: "Building APIs for Lagos State Aids Control Agency using Node.JS, Express, Typesript, Postgres.",
-      link: "https://uat-lasaca.mydeslynkpartners.com/"
-    }
-  ]
+      description:
+        "Built secure RESTful APIs using Node.js, Express.js, TypeScript, and PostgreSQL to manage HIV/AIDS awareness content, test center data, and case analytics for Lagos State Aids Control Agency.",
+      link: "https://uat-lasaca.mydeslynkpartners.com/",
+    },
+  ];
+
 
   const skills = [
     "C# and ASP.NET Development",
@@ -138,13 +147,12 @@ const App = () => {
         <Section id="about" title="Professional Summary">
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700">
-              Ogunba Joseph Adewole is a dedicated and innovative Fullstack Developer with a passion for creating
-              cutting-edge user experiences. Skilled in crafting responsive interfaces, implementing innovative solutions, and ensuring optimal
-              application performance through thorough testing and debugging. Proficient in utilizing a range of
-              technologies, including C#, ASP.NET, and various database operations, in building APIs. Excels in
-              JavaScript/Typescript frameworks such as React.JS, Angular J.S, and Node. JS. Committed to staying
-              current with emerging technologies and trends to drive continuous improvement in visual appeal and
-              usability.
+              Ogunba Joseph Adewole is an experienced and versatile Senior Full Stack Developer with 5+ years of hands-on experience
+              in designing, developing, and maintaining robust web applications and platforms. Proven
+              expertise in Full Stack Development, RESTful API design, and building complex systems
+              across e-commerce, fintech, edtech, logistics, and health sectors. Skilled in Go, Node.js,
+              TypeScript, React, PostgreSQL, MongoDB, and more. Committed to delivering high-quality,
+              scalable solutions and leading collaborative software engineering teams.
             </p>
           </div>
         </Section>
