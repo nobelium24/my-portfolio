@@ -147,7 +147,7 @@ const App = () => {
         <Section id="about" title="Professional Summary">
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700">
-              Ogunba Joseph Adewole is an experienced and versatile Senior Full Stack Developer with 5+ years of hands-on experience
+              Ogunba Joseph Adewole is an experienced and versatile Senior Full Stack Developer with years of hands-on experience
               in designing, developing, and maintaining robust web applications and platforms. Proven
               expertise in Full Stack Development, RESTful API design, and building complex systems
               across e-commerce, fintech, edtech, logistics, and health sectors. Skilled in Go, Node.js,
