@@ -200,7 +200,7 @@ const App = () => {
               For a detailed overview of my experience and qualifications, please download or view my complete resume below.
             </p>
             <a
-              href="https://drive.google.com/file/d/1974TtOCSFaF6tUjTlj9Vl3cRycr615uv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1v55DoiMCPEtGWA5UwP9OXl-kK7YxiYFK/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
