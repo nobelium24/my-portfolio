@@ -147,12 +147,13 @@ const App = () => {
         <Section id="about" title="Professional Summary">
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700">
-              Ogunba Joseph Adewole is an experienced and versatile Full Stack Developer with years of hands-on experience
-              in designing, developing, and maintaining robust web applications and platforms. Proven
-              expertise in Full Stack Development, RESTful API design, and building complex systems
-              across e-commerce, fintech, edtech, logistics, and health sectors. Skilled in Go, Node.js,
-              TypeScript, React, PostgreSQL, MongoDB, and more. Committed to delivering high-quality,
-              scalable solutions and leading collaborative software engineering teams.
+              Ogunba Joseph Adewole is an experienced and versatile Fullstack Engineer with 4+ years of experience building scalable and secure software systems
+              across industries including e-commerce, logistics, ride-hailing, edtech, and finance. Proficient in
+              designing and deploying RESTful APIs, implementing CI/CD pipelines, and managing cloud
+              infrastructure (AWS & Azure). Experienced in architecting robust backend systems with Node.js,
+              TypeScript, PostgreSQL, and MongoDB, as well as building responsive frontends with React
+              and TypeScript. Demonstrates strong DevOps practices, system monitoring, performance
+              tuning, and collaborative agile development.
             </p>
           </div>
         </Section>
