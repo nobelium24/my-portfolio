@@ -144,18 +144,40 @@ const App = () => {
   ];
 
 
-  const skills = [
-    "C# and ASP.NET Development",
-    "RESTful API Development",
-    "Database Operations (Microsoft SQL Server, PostgreSQL, MongoDB)",
-    "Entity Framework Core ORM",
-    "JavaScript/TypeScript (React.JS, Angular J.S, Node.JS, Express.JS, Adonis.JS)",
-    "HTML, CSS (Bootstrap CSS, Tailwind CSS, SASS)",
-    "Git and GitHub for collaboration",
-    "Jest Testing Framework",
-    "GraphQL API Development",
-    "Golang and the Gin framework"
-  ] as Skill[]
+  const skills: Skill[] = [
+    { name: "JavaScript", category: "Languages" },
+    { name: "TypeScript", category: "Languages" },
+    { name: "C#", category: "Languages" },
+    { name: "Go", category: "Languages" },
+
+    { name: "ASP.NET", category: "Frameworks" },
+    { name: "Express.js", category: "Frameworks" },
+    { name: "Next.js", category: "Frameworks" },
+    { name: "Gin", category: "Frameworks" },
+    { name: "React", category: "Frameworks" },
+    { name: "React Native", category: "Frameworks" },
+    { name: "Tailwind CSS", category: "Frameworks" },
+
+    { name: "MongoDB", category: "Databases" },
+    { name: "PostgreSQL", category: "Databases" },
+    { name: "Redis", category: "Databases" },
+
+    { name: "Git", category: "Tools" },
+    { name: "GitHub", category: "Tools" },
+    { name: "Docker", category: "Tools" },
+
+
+    { name: "Jest", category: "Testing" },
+
+    { name: "HTTP", category: "Protocols" },
+    { name: "HTTPS", category: "Protocols" },
+    { name: "REST", category: "Protocols" },
+    { name: "GraphQL", category: "Protocols" },
+    { name: "WebSocket", category: "Protocols" },
+
+    { name: "Node.js", category: "Runtimes" }
+  ];
+
 
   const certifications = [
     "B.Sc Chemistry (Second class upper) | Olabisi Onabanjo University, Ogun State",

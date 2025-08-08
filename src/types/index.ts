@@ -22,14 +22,22 @@ export type SectionProps = {
     children: React.ReactNode;
 };
 
-export type Skill =
-    | 'C# and ASP.NET Development'
-    | 'RESTful API Development'
-    | 'Database Operations'
-    | 'Entity Framework Core ORM'
-    | 'JavaScript/TypeScript'
-    | 'HTML, CSS'
-    | 'Git and GitHub'
-    | 'Jest Testing Framework'
-    | 'GraphQL API Development'
-    | 'Golang and Gin framework';
+// export type Skill =
+//     | 'C# and ASP.NET Development'
+//     | 'RESTful API Development'
+//     | 'Database Operations'
+//     | 'Entity Framework Core ORM'
+//     | 'JavaScript/TypeScript'
+//     | 'HTML, CSS'
+//     | 'Git and GitHub'
+//     | 'Jest Testing Framework'
+//     | 'GraphQL API Development'
+//     | 'Golang and Gin framework';
+
+
+export type SkillCategory = "Languages" | "Frameworks" | "Databases" | "Tools" | "Testing" | "DevOps" | "Protocols" | "Runtimes";
+
+export interface Skill {
+    name: string;
+    category: SkillCategory;
+}
