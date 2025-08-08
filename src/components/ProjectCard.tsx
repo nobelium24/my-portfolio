@@ -1,45 +1,58 @@
+import { motion } from "framer-motion";
 import { ProjectCardProps } from "../types";
+import TechIcon from "./TechIcon";
 
-export default function ProjectCard({ title, role, period, description, link }: ProjectCardProps) {
-  const isValidLink =
-    link && !["in-progress", "testing"].includes(link.toLowerCase()) && link.startsWith("http");
+function ProjectCard(project: ProjectCardProps) {
+  const showLink =
+    project.link && project.link !== "in-progress" && project.link !== "testing";
+  const status =
+    project.link === "in-progress"
+      ? "In Progress"
+      : project.link === "testing"
+        ? "Testing"
+        : null;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 mb-6 hover:shadow-lg transition duration-300 ease-in-out">
-      <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
-      <div className="flex justify-between items-center mb-3">
-        <span className="text-sm text-gray-600 font-medium">{role}</span>
-        <span className="text-sm text-gray-400">{period}</span>
-      </div>
-      <p className="text-gray-600 mb-4">{description}</p>
+    <motion.div
+      className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <h3 className="text-2xl font-bold text-gray-800 dark:text-white">
+        {project.title}
+      </h3>
+      <p className="text-sm text-gray-500 dark:text-gray-400">
+        {project.period}
+      </p>
 
-      {isValidLink && (
+      <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+        {project.description}
+      </p>
+
+      <div className="flex flex-wrap gap-2 mt-4">
+        {project.technologies?.map((tech, index) => (
+          <TechIcon key={index} tech={tech} />
+        ))}
+      </div>
+
+      {showLink ? (
         <a
-          href={link}
+          href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-xl hover:bg-blue-700 transition"
+          className="inline-block mt-5 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
         >
-          Visit project
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
+          Visit Project
         </a>
-      )}
-
-      {link === "in-progress" && (
-        <p className="text-sm text-yellow-600 italic">🚧 Project is still in progress</p>
-      )}
-
-      {link === "testing" && (
-        <p className="text-sm text-orange-600 italic">🧪 Link currently being tested</p>
-      )}
-    </div>
+      ) : status ? (
+        <span className="inline-block mt-5 px-3 py-1 text-sm bg-yellow-100 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-100 rounded-full">
+          {status}
+        </span>
+      ) : null}
+    </motion.div>
   );
 }
+
+export default ProjectCard;

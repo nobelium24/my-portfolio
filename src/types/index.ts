@@ -13,6 +13,7 @@ export type ProjectCardProps = {
     period: string;
     description: string;
     link?: string;
+    technologies: string[]
 };
 
 export type SectionProps = {

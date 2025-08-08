@@ -60,6 +60,7 @@ const App = () => {
       description:
         "Developed a fully functional e-commerce platform using Next.js, Node.js, Express.js, and MongoDB. Focused on replicating pixel-perfect UI/UX from design files while ensuring scalable and maintainable architecture.",
       link: "https://www.kikperfume.com/",
+      technologies: ["Node.js", "TypeScript", "MongoDB", "Express.js", "Next.js", "Tailwind CSS"]
     },
     // {
     //   title: "TimeShoppy",
@@ -75,6 +76,7 @@ const App = () => {
       description:
         "Designed and implemented RESTful APIs using Node.js, TypeScript, and MongoDB to manage inventory, customer orders, and payment processing for a luxury perfume brand.",
       link: "https://www.gleam.global/",
+      technologies: ["Node.js", "TypeScript", "MongoDB", "Express.js", "Next.js", "Tailwind CSS"]
     },
     {
       title: "Flurrypay",
@@ -83,14 +85,16 @@ const App = () => {
       description:
         "Engineered secure and scalable RESTful APIs using Node.js, TypeScript, Express, and PostgreSQL for a fintech application supporting fiat and cryptocurrency transactions. Integrated payment logic, KYC flows, and role-based access control.",
       link: "https://flurrypay.io/",
+      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Express.js", "Next.js", "Tailwind CSS"]
     },
     {
-      title: "Cedarbyte Technologies",
+      title: "Cedar AI",
       role: "Back-end Developer",
       period: "August 2024 – January 2025",
       description:
         "Built high-performance APIs using Node.js, TypeScript, Express, PostgreSQL, and Redis to power an AI-driven education platform. Focused on user analytics, adaptive learning modules, and content delivery.",
       link: "testing",
+      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Express.js", "Next.js", "Tailwind CSS", "Redis"]
     },
     {
       title: "Fiyifit",
@@ -99,6 +103,7 @@ const App = () => {
       description:
         "Spearheading the development of a gym management platform using Go (Gin), PostgreSQL, and TypeScript. Responsible for core features including member subscriptions, scheduling, and real-time notifications.",
       link: "in-progress",
+      technologies: ["Go", "Gin", "PostgreSQL", "TypeScript", "Next.js", "Tailwind CSS", "Docker", "React-Native"]
     },
     {
       title: "Chidori",
@@ -107,6 +112,7 @@ const App = () => {
       description:
         "Developed and maintained mission-critical APIs for a logistics and delivery platform using Node.js, TypeScript, and PostgreSQL. Enabled real-time package tracking, delivery assignment, and driver management.",
       link: "https://apps.apple.com/app/chidori-package-delivery/id6747782664",
+      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Express.js", "Next.js", "Tailwind CSS", "React-Native", "WebSocket"]
     },
     {
       title: "LSACA",
@@ -115,7 +121,26 @@ const App = () => {
       description:
         "Built secure RESTful APIs using Node.js, Express.js, TypeScript, and PostgreSQL to manage HIV/AIDS awareness content, test center data, and case analytics for Lagos State Aids Control Agency.",
       link: "https://uat-lasaca.mydeslynkpartners.com/",
+      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Express.js", "Next.js", "Tailwind CSS"]
     },
+    {
+      title: "ZSM",
+      role: "Back-end Developer",
+      period: "August 2024 – July 2025",
+      description:
+        "Built and managed RESTful APIs for mobility, ride-hailing, and carpooling applications using Node.js, TypeScript, and MongoDB. Focused on scalability, security, and performance optimization.",
+      link: "https://apps.apple.com/ng/app/zeno-affordable-ride/id6746136829",
+      technologies: ["Node.js", "TypeScript", "MongoDB", "Express.js", "Next.js", "Tailwind CSS"]
+    },
+    {
+      title: "collab-edit",
+      role: "Full-stack Developer",
+      period: "July 2025 – Present",
+      description:
+        "Developing a collaborative code editor platform using Next.js, Golang, postgresql, and WebSocket for real-time code sharing and editing. Focused on building a responsive UI and robust back-end architecture.",
+      link: "https://collab-edit-xi.vercel.app/",
+      technologies: ["Next.js", "Go", "Gin", "PostgreSQL", "WebSocket", "Tailwind CSS", "React", "Docker"]
+    }
   ];
 
 
