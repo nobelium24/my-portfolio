@@ -34,9 +34,7 @@ export default function SkillPill({ skill }: { skill: Skill }) {
             onMouseLeave={() => setShowTooltip(false)}
         >
             {skill.name}
-
-            {/* {skill.name}
-            {showTooltip && (
+            {/* {showTooltip && (
                 <span className="absolute left-1/2 top-full z-10 mt-2 w-max -translate-x-1/2 bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap">
                     {categoryTooltips[skill.category]}
                 </span>
