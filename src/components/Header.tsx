@@ -22,8 +22,8 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
         { href: '#experience', label: 'Experience', icon: Briefcase },
         { href: '#projects', label: 'Projects', icon: Folder },
         { href: '#skills', label: 'Skills', icon: Code },
-        { href: 'https://linkedin.com', label: 'LinkedIn', icon: Linkedin },
-        { href: 'https://medium.com', label: 'Medium', icon: BookOpen },
+        { href: 'https://www.linkedin.com/in/ogunba-joseph-2a2265195/', label: 'LinkedIn', icon: Linkedin },
+        { href: 'https://medium.com/@nobelium24', label: 'Medium', icon: BookOpen },
     ];
 
     return (
