@@ -33,7 +33,6 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
                     Ogunba Joseph Adewole
                 </h1>
 
-                {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-6">
                     <ul className="flex space-x-6">
                         {navItems.map((item, index) => {
@@ -55,7 +54,6 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
                         })}
                     </ul>
 
-                    {/* Dark mode toggle */}
                     <button
                         onClick={toggleDarkMode}
                         className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200"
@@ -65,7 +63,6 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
                     </button>
                 </nav>
 
-                {/* Mobile menu button and dark mode toggle */}
                 <div className="flex items-center space-x-4 md:hidden">
                     <button
                         onClick={toggleDarkMode}
@@ -85,7 +82,6 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
                 </div>
             </div>
 
-            {/* Mobile Navigation */}
             <div className={`md:hidden bg-white dark:bg-gray-800 transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <ul className="px-4 pb-4 space-y-3">
                     {navItems.map((item, index) => {

@@ -14,7 +14,7 @@ function ProjectCard(project: ProjectCardProps) {
 
   return (
     <motion.div
-      className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+      className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow" /* Changed dark:bg */
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -42,7 +42,7 @@ function ProjectCard(project: ProjectCardProps) {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-5 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+          className="inline-block mt-5 px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 transition"
         >
           Visit Project
         </a>

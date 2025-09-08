@@ -238,7 +238,7 @@ const App = () => {
     <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-      <main>
+      <main className='mt-7'>
         <Section id="about" title="Professional Summary">
           <motion.div
             className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
@@ -325,7 +325,7 @@ const App = () => {
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+                  <span className="text-tertiary mr-2">•</span>
                   <span className="text-gray-700 dark:text-gray-300">{cert}</span>
                 </motion.li>
               ))}
@@ -348,7 +348,7 @@ const App = () => {
               href="https://drive.google.com/file/d/13cULEj0KddkDmVKPgOdOi8GDv2lYt61B/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+              className="inline-block bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
