@@ -251,8 +251,8 @@ const App = () => {
               Ogunba Joseph Adewole is an experienced and versatile Fullstack Engineer with 4+ years of experience building scalable and secure software systems
               across industries including e-commerce, logistics, ride-hailing, edtech, and finance. Proficient in
               designing and deploying RESTful APIs, implementing CI/CD pipelines, and managing cloud
-              infrastructure (AWS & Azure). Experienced in architecting robust backend systems with Node.js,
-              TypeScript, PostgreSQL, and MongoDB, as well as building responsive frontends with React
+              infrastructure (AWS). Experienced in architecting robust backend systems with Golang, Node.js, JavaScript,
+              TypeScript, PostgreSQL, Redis and MongoDB, as well as building responsive frontends with React
               and TypeScript. Demonstrates strong DevOps practices, system monitoring, performance
               tuning, and collaborative agile development.
             </p>
