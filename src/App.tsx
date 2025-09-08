@@ -1,12 +1,69 @@
-import Header from './components/Header'
-import ExperienceCard from './components/ExperienceCard'
-import ProjectCard from './components/ProjectCard'
-import Section from './components/Section'
-import SkillPill from './components/SkillPill'
-import Footer from './components/Footer'
-import { Skill } from './types'
+import { useState, useEffect } from 'react';
+import { motion, Variants } from 'framer-motion';
+import Header from './components/Header';
+import ExperienceCard from './components/ExperienceCard';
+import ProjectCard from './components/ProjectCard';
+import Section from './components/Section';
+import SkillPill from './components/SkillPill';
+import Footer from './components/Footer';
+import { Skill } from './types';
+
+// Animation variants
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const itemVariants: Variants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+};
+
+const fadeInVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
+  }
+};
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    // Check system preference for dark mode
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setDarkMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (mounted) {
+      if (darkMode) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+  }, [darkMode, mounted]);
+
   const experiences = [
     {
       title: "Back-end developer/Technical writer",
@@ -62,13 +119,6 @@ const App = () => {
       link: "https://www.kikperfume.com/",
       technologies: ["Node.js", "TypeScript", "MongoDB", "Express.js", "Next.js", "Tailwind CSS"]
     },
-    // {
-    //   title: "TimeShoppy",
-    //   role: "Back-end Developer",
-    //   period: "May 2023 – August 2023",
-    //   description:
-    //     "Built and maintained RESTful APIs using Node.js, Express.js, and MongoDB to support e-commerce functionalities including product catalog, user authentication, and order management.",
-    // },
     {
       title: "Gleam Perfumes",
       role: "Back-end Developer",
@@ -143,7 +193,6 @@ const App = () => {
     }
   ];
 
-
   const skills: Skill[] = [
     { name: "JavaScript", category: "Languages" },
     { name: "TypeScript", category: "Languages" },
@@ -166,7 +215,6 @@ const App = () => {
     { name: "GitHub", category: "Tools" },
     { name: "Docker", category: "Tools" },
 
-
     { name: "Jest", category: "Testing" },
 
     { name: "HTTP", category: "Protocols" },
@@ -178,22 +226,28 @@ const App = () => {
     { name: "Node.js", category: "Runtimes" }
   ];
 
-
   const certifications = [
     "B.Sc Chemistry (Second class upper) | Olabisi Onabanjo University, Ogun State",
     "Professional Certificate in Software Engineering | SQI College of ICT, Oyo State",
     "DevNet Associate Certification | Cisco Networking Academy"
-  ]
+  ];
 
+  if (!mounted) return null;
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
       <main>
         <Section id="about" title="Professional Summary">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <p className="text-gray-700">
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInVariants}
+          >
+            <p className="text-gray-700 dark:text-gray-300">
               Ogunba Joseph Adewole is an experienced and versatile Fullstack Engineer with 4+ years of experience building scalable and secure software systems
               across industries including e-commerce, logistics, ride-hailing, edtech, and finance. Proficient in
               designing and deploying RESTful APIs, implementing CI/CD pipelines, and managing cloud
@@ -202,62 +256,106 @@ const App = () => {
               and TypeScript. Demonstrates strong DevOps practices, system monitoring, performance
               tuning, and collaborative agile development.
             </p>
-          </div>
+          </motion.div>
         </Section>
 
         <Section id="experience" title="Work Experience">
-          <div className="space-y-6">
+          <motion.div
+            className="space-y-6"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {experiences.map((exp, i) => (
-              <ExperienceCard key={i} {...exp} />
+              <motion.div key={i} variants={itemVariants}>
+                <ExperienceCard {...exp} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </Section>
 
         <Section id="projects" title="Key Projects">
-          <div className="grid md:grid-cols-2 gap-6">
+          <motion.div
+            className="grid md:grid-cols-2 gap-6"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {projects.map((proj, i) => (
-              <ProjectCard key={i} {...proj} />
+              <motion.div key={i} variants={itemVariants}>
+                <ProjectCard {...proj} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </Section>
 
         <Section id="skills" title="Technical Skills">
-          <div className="flex flex-wrap gap-3">
+          <motion.div
+            className="flex flex-wrap gap-3"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {skills.map((skill, i) => (
-              <SkillPill key={i} skill={skill} />
+              <motion.div key={i} variants={itemVariants}>
+                <SkillPill skill={skill} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </Section>
 
         <Section id="certifications" title="Certifications">
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInVariants}
+          >
             <ul className="space-y-3">
               {certifications.map((cert, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-tertiary mr-2">•</span>
-                  <span className="text-gray-700">{cert}</span>
-                </li>
+                <motion.li
+                  key={index}
+                  className="flex items-start"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <span className="text-blue-500 dark:text-blue-400 mr-2">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">{cert}</span>
+                </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </Section>
 
         <Section id="resume" title="View My Resume">
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <p className="text-gray-700 mb-4">
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInVariants}
+          >
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
               For a detailed overview of my experience and qualifications, please download or view my complete resume below.
             </p>
-            <a
+            <motion.a
               href="https://drive.google.com/file/d/13cULEj0KddkDmVKPgOdOi8GDv2lYt61B/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               View CV
-            </a>
-          </div>
+            </motion.a>
+          </motion.div>
         </Section>
-
       </main>
 
       <Footer />
@@ -265,4 +363,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
