@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, User, Briefcase, Folder, Code, Linkedin, BookOpen, Sun, Moon } from 'lucide-react';
+import { Menu, X, User, Briefcase, Folder, Code, Linkedin, BookOpen, Sun, Moon, Github } from 'lucide-react';
 
 interface HeaderProps {
     darkMode: boolean;
@@ -24,6 +24,7 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
         { href: '#skills', label: 'Skills', icon: Code },
         { href: 'https://www.linkedin.com/in/ogunba-joseph-2a2265195/', label: 'LinkedIn', icon: Linkedin },
         { href: 'https://medium.com/@nobelium24', label: 'Medium', icon: BookOpen },
+        { href: 'https://github.com/nobelium24', label: 'GitHub', icon: Github },
     ];
 
     return (
